@@ -1,0 +1,10 @@
+[package]
+name = "cashaccount-sys"
+version = "0.1.0"
+authors = ["Dagur Valberg Johannsson <dagurval@pvv.ntnu.no>"]
+edition = "2018"
+build = "build.rs"
+
+[build-dependencies]
+bindgen = ">=0.47.0"
+cc = "1.0"
