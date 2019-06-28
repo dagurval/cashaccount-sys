@@ -19,6 +19,7 @@ fn fail_on_empty_directory(name: &str) {
 fn compile_libcashaccount() {
     let mut compiler = cc::Build::new();
     compiler.opt_level(3);
+    compiler.flag("-std=c++11");
     compiler.include("libcashaccount/includes/");
     compiler.include("libcashaccount/src/");
 
